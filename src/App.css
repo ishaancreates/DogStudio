@@ -2,13 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 html,
-body ,
+body,
 #root {
-  height: 100%;
   width: 100%;
   background-color: black;
+}
+main {
+  position: relative;
+}
+
+section {
+  min-height: 100vh;
+  border: 2px solid white;
+  position: relative;
+  z-index: 2;
 }
