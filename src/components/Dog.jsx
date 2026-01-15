@@ -69,17 +69,31 @@ const Dog = () => {
         start: "top top",
         end: "bottom bottom",
         markers: true,
+        scrub: true,
       },
     });
 
-    tl
-    .to(dogModel.current.scene.position, {
+    tl.to(dogModel.current.scene.position, {
       z: "-=0.5",
       y: "+=0.1",
     })
-    .to(dogModel.current.scene.rotation,{
-      
-    });
+      .to(dogModel.current.scene.rotation, {
+        x: `+=${Math.PI / 15}`,
+      })
+      .to(
+        dogModel.current.scene.rotation,
+        {
+          y: `-=${Math.PI}`,
+        },
+        "third"
+      )
+      .to(
+        dogModel.current.scene.position,
+        {
+          x: "-=0.25",
+        },
+        "third"
+      );
   });
 
   return (
