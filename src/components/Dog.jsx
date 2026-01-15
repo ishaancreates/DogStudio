@@ -68,13 +68,12 @@ const Dog = () => {
         endTrigger: "#section-3",
         start: "top top",
         end: "bottom bottom",
-        markers: true,
         scrub: true,
       },
     });
 
     tl.to(dogModel.current.scene.position, {
-      z: "-=0.5",
+      z: "-=0.75",
       y: "+=0.1",
     })
       .to(dogModel.current.scene.rotation, {
@@ -90,7 +89,9 @@ const Dog = () => {
       .to(
         dogModel.current.scene.position,
         {
-          x: "-=0.25",
+          x: "-=0.50",
+          z: "+=0.67",
+          y: "-=0.05",
         },
         "third"
       );
