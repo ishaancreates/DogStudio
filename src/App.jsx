@@ -25,6 +25,7 @@ function App() {
           <Dog />
         </Canvas>
         <section id="section-1">
+
           <nav>
             <div className="nav-elem">
               <svg
@@ -59,6 +60,7 @@ function App() {
             </div>
           </nav>
           <div className="middle">
+
             <div className="left">
               <h1>
                 We <br /> Make <br /> Good <br /> Shit
@@ -77,6 +79,9 @@ function App() {
             
             </div>
           </div>
+            <div className="first-line"></div>
+            <div className="second-line"></div>
+
         </section>
         <section id="section-2">2</section>
         <section id="section-3">3</section>
